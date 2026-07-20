@@ -15,6 +15,9 @@
 }
 
 .profile__info {
+  height: 190px;
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
@@ -27,7 +30,8 @@
 
 .profile__job {
   margin: 12px 0 24px;
-  font-size: 20px;
+  flex-grow: 1;
+  font-size: 16px;
   color: #666;
   line-height: 1.2;
 }
@@ -46,6 +50,11 @@
   background: transparent;
   padding: 0;
   color: #212121;
+  opacity: .7;
+}
+
+.profile__edit:hover {
+  opacity: 1;
 }
 
 .profile__add {
@@ -55,66 +64,6 @@
   border-radius: 8px;
 }
 
-.profile__edit:hover {
-  opacity: 0.7;
-}
-
 .profile__add:hover {
   opacity: 0.8;
-}
-
-
-/* Tablet */
-@media screen and (max-width: 900px) {
-
-  .profile {
-    gap: 20px;
-  }
-
-  .profile__avatar {
-    width: 120px;
-    height: 120px;
-  }
-
-}
-
-
-/* Mobile */
-@media screen and (max-width: 630px) {
-
-  .profile {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    padding-bottom: 20px;
-  }
-
-  .profile__avatar {
-    width: 80px;
-    height: 80px;
-  }
-
-  .profile__info {
-    width: 100%;
-  }
-
-  .profile__name {
-    font-size: 24px;
-  }
-
-  .profile__job {
-    font-size: 16px;
-    margin: 8px 0 20px;
-  }
-
-  .profile__add {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .profile__edit {
-    justify-content: center;
-  }
-
 }
